@@ -19,7 +19,7 @@
      define subcomponents such as "Valves" at this level.
      Documentation at /docs/config/server.html
  -->
-<Server port="8105" shutdown="SHUTDOWN">
+<Server port="15005" shutdown="SHUTDOWN">
   <!-- Security listener. Documentation at /docs/config/listeners.html
   <Listener className="org.apache.catalina.security.SecurityListener" />
   -->
@@ -67,7 +67,8 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL HTTP/1.1 Connector on port 8080
     -->
-    <Connector port="<%=ENV['OPENSHIFT_DIY_PORT']%>" protocol="org.apache.coyote.http11.Http11NioProtocol"
+    <Connector  address="<%=ENV['OPENSHIFT_DIY_IP']%>" port="<%=ENV['OPENSHIFT_DIY_PORT']%>" 
+                protocol="org.apache.coyote.http11.Http11NioProtocol"
                 connectionTimeout="60000"
                 redirectPort="8543"
                 useBodyEncodingForURI="true"

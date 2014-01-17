@@ -3,6 +3,8 @@
 # script. The application will work only if it binds to
 # $OPENSHIFT_INTERNAL_IP:8080
 
+export TEAMCITY_DATA_PATH=${OPENSHIFT_DATA_DIR}
+
 INSTALL_DIR=${OPENSHIFT_HOMEDIR}app-root/runtime
 
 echo "Starting teamcity."
