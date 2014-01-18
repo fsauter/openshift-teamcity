@@ -11,11 +11,6 @@ This is a DIY cartridge for setting up Teamcity (currently 8.0.5) on Openshift.
 ####Setup rhc
     rhc setup
 
-
 ####Setup a new Teamcity application
-    rhc app create <instance name> diy-0.1 --from-code=git://github.com/sriv/openshift-teamcity.git 
-
+    rhc app create <instance name> diy-0.1 --from-code=git://github.com/Kissy/openshift-teamcity.git
     
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sriv/openshift-teamcity/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
