@@ -12,5 +12,5 @@ This is a DIY cartridge for setting up Teamcity (currently 8.0.5) on Openshift.
     rhc setup
 
 ####Setup a new Teamcity application
-    rhc app create <instance name> diy-0.1 --from-code=git://github.com/Kissy/openshift-teamcity.git
+    rhc app create <instance name> diy-0.1 --from-code=git://github.com/fsauter/openshift-teamcity.git
     
